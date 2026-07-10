@@ -4,9 +4,10 @@ export const site: SiteInfo = {
   name: 'Orhembetyoga Nelson Oryiman',
   shortName: 'Nelson',
   role: 'UI Frontend Engineer',
-  tagline: "Hey, I'm Nelson. UI Frontend Engineer 💻",
+  tagline: "Hey, I'm Nelson",
+  subTagline: " and you're welcome.",
   summary:
-    "I build responsive, user-friendly interfaces and scalable web applications, and I'm deepening my backend skills to ship full-stack products end to end.",
+    "I'm a Fullstack Developer with much inclination towards Frontend Engineering. Welcome to my page where I showcase my work and let you know more about me.",
   email: 'oonelsoncodes@gmail.com',
   location: 'Abuja, Nigeria',
   socialLinks: [

@@ -11,6 +11,7 @@ export interface SiteInfo {
   shortName: string
   role: string
   tagline: string
+  subTagline: string
   summary: string
   email: string
   location: string
