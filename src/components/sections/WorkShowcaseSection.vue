@@ -26,14 +26,31 @@ const positions = ['left', 'center', 'right'] as const
           :href="project.url"
           target="_blank"
           rel="noopener noreferrer"
-          class="group flex aspect-[4/3] flex-col justify-between bg-gradient-to-br from-neutral-100 to-neutral-200 p-4"
+          class="group relative flex aspect-4/3 flex-col justify-end overflow-hidden bg-linear-to-br from-neutral-100 to-neutral-200 p-4"
         >
-          <span class="self-end rounded-full bg-white/80 p-1.5 text-ink opacity-0 transition-opacity group-hover:opacity-100">
+          <img
+            v-if="project.image"
+            :src="project.image"
+            :alt="`${project.name} screenshot`"
+            class="absolute inset-0 h-full w-full object-cover object-top"
+          />
+          <div
+            class="absolute inset-0"
+            :class="project.image ? 'bg-linear-to-t from-black/70 via-black/0 to-black/0' : ''"
+          />
+          <span
+            class="absolute right-3 top-3 rounded-full bg-white/80 p-1.5 text-ink opacity-0 transition-opacity group-hover:opacity-100"
+          >
             <IconArrowUpRight class="h-4 w-4" />
           </span>
-          <div>
-            <p class="font-semibold text-ink">{{ project.name }}</p>
-            <p class="mt-1 line-clamp-2 text-xs text-neutral-600">{{ project.description }}</p>
+          <div class="relative">
+            <p class="font-semibold" :class="project.image ? 'text-white' : 'text-ink'">{{ project.name }}</p>
+            <p
+              class="mt-1 line-clamp-2 text-xs"
+              :class="project.image ? 'text-white/80' : 'text-neutral-600'"
+            >
+              {{ project.description }}
+            </p>
           </div>
         </a>
       </TiltCard>

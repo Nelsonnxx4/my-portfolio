@@ -1,5 +1,7 @@
 <script setup lang="ts">
-withDefaults(
+import { computed } from 'vue'
+
+const props = withDefaults(
   defineProps<{
     href?: string
     variant?: 'solid' | 'outline'
@@ -7,33 +9,24 @@ withDefaults(
   }>(),
   { variant: 'solid' },
 )
+
+const tag = computed(() => (props.href ? 'a' : 'button'))
 </script>
 
 <template>
-  <a
-    v-if="href"
+  <component
+    :is="tag"
     :href="href"
+    :type="href ? undefined : 'button'"
     :target="target"
     :rel="target === '_blank' ? 'noopener noreferrer' : undefined"
-    class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-colors"
+    class="relative isolate inline-flex items-center gap-2 overflow-hidden rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-200 active:scale-[0.97]"
     :class="
       variant === 'solid'
-        ? 'bg-ink text-paper hover:bg-neutral-800'
+        ? 'btn-noise bg-linear-to-b from-neutral-700 to-neutral-950 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.14),0_10px_20px_-8px_rgba(0,0,0,0.5)] ring-1 ring-black/40 hover:brightness-110'
         : 'border border-neutral-200 bg-white text-ink hover:border-neutral-300'
     "
   >
     <slot />
-  </a>
-  <button
-    v-else
-    type="button"
-    class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-colors"
-    :class="
-      variant === 'solid'
-        ? 'bg-ink text-paper hover:bg-neutral-800'
-        : 'border border-neutral-200 bg-white text-ink hover:border-neutral-300'
-    "
-  >
-    <slot />
-  </button>
+  </component>
 </template>

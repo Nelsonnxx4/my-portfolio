@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { site } from '@/data/site'
+import heroImg from '@/assets/images/hero_img.jpeg'
 import AvatarImage from '@/components/ui/AvatarImage.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import AvailabilityDot from '@/components/ui/AvailabilityDot.vue'
@@ -17,7 +18,7 @@ useHeroIntro([avatarEl, headingEl, bioEl, ctaEl])
 <template>
   <section id="top" class="mx-auto flex max-w-2xl flex-col items-center px-4 pb-16 pt-20 text-center">
     <div ref="avatarEl">
-      <AvatarImage :alt="site.name" size="96px" />
+      <AvatarImage :src="heroImg" :alt="site.name" size="96px" />
     </div>
 
     <h1 ref="headingEl" class="mt-6 text-4xl font-semibold tracking-tight sm:text-5xl">
