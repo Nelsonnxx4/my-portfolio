@@ -15,7 +15,7 @@ useHeroIntro([avatarEl, headingEl, bioEl])
 <template>
   <section
     id="top"
-    class="mx-auto flex max-w-2xl flex-col items-center px-4 pb-16 pt-40 text-center"
+    class="mx-auto flex max-w-2xl flex-col items-center px-4 pb-16 pt-24 text-center sm:pt-40"
   >
     <div ref="avatarEl">
       <AvatarImage :src="heroImg" :alt="site.name" size="96px" />
