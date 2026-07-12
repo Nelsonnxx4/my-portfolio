@@ -21,13 +21,13 @@ useHeroIntro([avatarEl, headingEl, bioEl])
       <AvatarImage :src="heroImg" :alt="site.name" size="96px" />
     </div>
 
-    <div class="flex justify-center items-baseline gap-5">
-      <h1 ref="headingEl" class="mt-6 text-4xl font-semibold tracking-tight sm:text-5xl">
+    <div class="flex flex-wrap items-baseline justify-center gap-x-5 gap-y-5 sm:flex-nowrap sm:gap-y-1">
+      <h1 ref="headingEl" class="mt-6 text-4xl font-semibold tracking-tight text-nowrap sm:text-5xl">
         {{ site.tagline }}
       </h1>
       <span class="relative inline-flex">
         <svg
-          class="hero-arrow pointer-events-none absolute -left-4 -top-10 h-9 w-11 sm:-left-5 sm:-top-12 sm:h-11 sm:w-13"
+          class="hero-arrow pointer-events-none absolute -left-2 -top-6 h-6 w-8 sm:-left-5 sm:-top-12 sm:h-11 sm:w-13"
           viewBox="0 0 60 50"
           fill="none"
           stroke-width="4"

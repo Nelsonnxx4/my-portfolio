@@ -43,5 +43,5 @@ claude
 
 shot.mjs
 shot2.mjs
-shot-mobile.mjs
+shot*.mjs
 UserNelsonApp*

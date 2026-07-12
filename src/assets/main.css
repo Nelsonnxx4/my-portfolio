@@ -72,9 +72,16 @@
     animation: marker-draw 0.6s 0.9s ease-out forwards;
   }
 
-  .highlight-yellow {
+  .highlight-yellow,
+  .highlight-lemon {
     position: relative;
     display: inline-block;
+    color: #171717;
+  }
+
+  .dark .highlight-yellow,
+  .dark .highlight-lemon {
+    color: #f5f5f5;
   }
 
   .highlight-yellow::before {
@@ -85,11 +92,6 @@
     background-color: #facc15;
     opacity: 0.6;
     transform: skewX(-10deg);
-  }
-
-  .highlight-lemon {
-    position: relative;
-    display: inline-block;
   }
 
   .highlight-lemon::before {
