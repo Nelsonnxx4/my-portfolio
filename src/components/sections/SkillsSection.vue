@@ -10,7 +10,9 @@ useGsapReveal(sectionEl, { stagger: 0.06 });
 
 <template>
   <section id="skills" class="mx-auto max-w-3xl px-4 py-16">
-    <div class="rounded-3xl border border-neutral-200 bg-white p-6 sm:p-8">
+    <div
+      class="rounded-3xl border border-neutral-200 bg-white p-6 dark:border-neutral-800 dark:bg-neutral-900 sm:p-8"
+    >
       <h2 class="text-2xl font-semibold tracking-tight">Tech I Work With</h2>
 
       <div ref="sectionEl" class="mt-6 space-y-5">

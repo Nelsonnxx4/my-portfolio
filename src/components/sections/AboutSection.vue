@@ -45,7 +45,7 @@ const hobbies = [
 <template>
   <section id="about" ref="sectionEl" class="mx-auto max-w-3xl px-4 pt-32 pb-16">
     <h2 class="text-2xl font-semibold tracking-tight">About</h2>
-    <p class="mt-4 max-w-3xl text-gray-600">
+    <p class="mt-4 max-w-3xl text-gray-600 dark:text-neutral-400">
       First time I wrote code was in 2020 out of curiousity which was
       <span class="highlight-yellow">python</span>, then I did'nt code till 3 years later which I
       started with <span class="highlight-lemon">web development</span>, and I have been loving it
@@ -68,19 +68,19 @@ const hobbies = [
     </p>
 
     <div class="mt-12">
-      <h3 class="text-sm font-semibold uppercase tracking-wide text-neutral-400">
+      <h3 class="text-sm font-semibold uppercase tracking-wide text-neutral-400 dark:text-neutral-500">
         Outside of code
       </h3>
       <ul class="mt-4 space-y-5">
         <li v-for="hobby in hobbies" :key="hobby.title" class="flex gap-3">
           <span
-            class="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-neutral-200 bg-white text-ink"
+            class="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-neutral-200 bg-white text-ink dark:border-neutral-800 dark:bg-neutral-900"
           >
             <component :is="hobby.icon" class="h-4 w-4" />
           </span>
           <div>
             <p class="font-medium text-ink">{{ hobby.title }}</p>
-            <p class="text-sm text-neutral-600">{{ hobby.description }}</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">{{ hobby.description }}</p>
             <div v-if="hobby.links?.length" class="mt-1 flex flex-wrap gap-4">
               <a
                 v-for="link in hobby.links"

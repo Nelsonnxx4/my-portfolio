@@ -7,9 +7,13 @@ defineProps<{ project: Project }>()
 </script>
 
 <template>
-  <article class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-5">
+  <article
+    class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900"
+  >
     <div class="flex items-center gap-3">
-      <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-ink">
+      <span
+        class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-neutral-100 text-ink dark:bg-neutral-800"
+      >
         <IconRepo class="h-4 w-4" />
       </span>
       <div>
@@ -25,7 +29,7 @@ defineProps<{ project: Project }>()
         </a>
       </div>
     </div>
-    <p class="mt-3 text-sm text-neutral-600">{{ project.description }}</p>
+    <p class="mt-3 text-sm text-neutral-600 dark:text-neutral-400">{{ project.description }}</p>
     <div class="mt-4 flex flex-wrap gap-1.5">
       <SkillBadge v-for="tech in project.stack" :key="tech" :label="tech" />
     </div>

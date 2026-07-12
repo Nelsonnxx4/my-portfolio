@@ -23,7 +23,7 @@ const icons: Partial<Record<IconName, typeof IconGithub>> = {
       :target="link.icon === 'mail' ? undefined : '_blank'"
       :rel="link.icon === 'mail' ? undefined : 'noopener noreferrer'"
       :aria-label="link.label"
-      class="flex h-9 w-9 items-center justify-center rounded-full text-ink transition-colors hover:bg-neutral-100"
+      class="flex h-9 w-9 items-center justify-center rounded-full text-ink transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-800"
     >
       <component :is="icons[link.icon]" :style="{ width: iconSize, height: iconSize }" />
     </a>

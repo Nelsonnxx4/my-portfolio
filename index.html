@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
+    <script>
+      (function () {
+        var stored = localStorage.getItem('theme');
+        var isDark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (isDark) document.documentElement.classList.add('dark');
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nelson Oryiman — UI Frontend Engineer building responsive, scalable web applications and transitioning into full-stack development.">
     <link rel="preconnect" href="https://fonts.googleapis.com">

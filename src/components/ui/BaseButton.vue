@@ -24,7 +24,7 @@ const tag = computed(() => (props.href ? 'a' : 'button'))
     :class="
       variant === 'solid'
         ? 'btn-noise bg-linear-to-b from-neutral-700 to-neutral-950 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.14),0_10px_20px_-8px_rgba(0,0,0,0.5)] ring-1 ring-black/40 hover:brightness-110'
-        : 'border border-neutral-200 bg-white text-ink hover:border-neutral-300'
+        : 'border border-neutral-200 bg-white text-ink hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-900 dark:hover:border-neutral-600'
     "
   >
     <slot />

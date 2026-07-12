@@ -13,7 +13,7 @@ useGsapReveal(sectionEl)
 <template>
   <section id="contact" ref="sectionEl" class="mx-auto max-w-2xl px-4 py-20 text-center">
     <h2 class="text-2xl font-semibold tracking-tight sm:text-3xl">Get in Touch</h2>
-    <p class="mt-3 text-neutral-600">
+    <p class="mt-3 text-neutral-600 dark:text-neutral-400">
       Have a role, project, or just want to talk shop? My inbox is open.
     </p>
 

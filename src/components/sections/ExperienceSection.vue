@@ -15,12 +15,12 @@ useGsapReveal(sectionEl)
       <article
         v-for="job in workExperience"
         :key="job.org"
-        class="rounded-2xl border border-neutral-200 p-5"
+        class="rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800"
       >
         <div class="flex flex-wrap items-baseline justify-between gap-2">
           <div>
             <p class="font-medium text-ink">{{ job.role }}</p>
-            <p class="text-sm text-neutral-600">
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">
               <a
                 v-if="job.url"
                 :href="job.url"
@@ -34,7 +34,7 @@ useGsapReveal(sectionEl)
           </div>
           <span class="text-sm text-neutral-500">{{ job.start }} – {{ job.end ?? 'Present' }}</span>
         </div>
-        <ul class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-neutral-600">
+        <ul class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-neutral-600 dark:text-neutral-400">
           <li v-for="bullet in job.bullets" :key="bullet">{{ bullet }}</li>
         </ul>
       </article>

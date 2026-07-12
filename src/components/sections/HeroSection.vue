@@ -45,12 +45,16 @@ useHeroIntro([avatarEl, headingEl, bioEl])
             d="M50 3 51.8 7.2 56 9 51.8 10.8 50 15 48.2 10.8 44 9 48.2 7.2Z"
           />
         </svg>
-        <span class="marker-underline italic font-thin text-gray-500 sm:text-xl">
+        <span class="marker-underline italic font-thin text-gray-500 dark:text-neutral-400 sm:text-xl">
           {{ site.subTagline }}
         </span>
       </span>
     </div>
 
-    <p ref="bioEl" class="mt-4 max-w-2xl text-balance text-gray-600" v-html="site.summary" />
+    <p
+      ref="bioEl"
+      class="mt-4 max-w-2xl text-balance text-gray-600 dark:text-neutral-400"
+      v-html="site.summary"
+    />
   </section>
 </template>
