@@ -30,15 +30,6 @@ useGsapReveal(sectionEl)
               >{{ job.org }}</a>
               <span v-else>{{ job.org }}</span>
               · {{ job.location }}
-              <template v-if="job.programLabel && job.programUrl">
-                ·
-                <a
-                  :href="job.programUrl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="hover:text-ink hover:underline"
-                >{{ job.programLabel }}</a>
-              </template>
             </p>
           </div>
           <span class="text-sm text-neutral-500">{{ job.start }} – {{ job.end ?? 'Present' }}</span>

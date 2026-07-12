@@ -49,7 +49,22 @@ const hobbies = [
       First time I wrote code was in 2020 out of curiousity which was
       <span class="highlight-yellow">python</span>, then I did'nt code till 3 years later which I
       started with <span class="highlight-lemon">web development</span>, and I have been loving it
-      ever since. Currently Interning at NITDA nigeria, under the AI and Robotics department NCAIR.
+      ever since. Currently Interning at
+      <a
+        href="https://nitda.gov.ng/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-medium text-ink hover:underline"
+        >NITDA</a
+      >
+      nigeria, under the AI and Robotics department
+      <a
+        href="https://ncair.nitda.gov.ng/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-medium text-ink hover:underline"
+        >NCAIR</a
+      >.
     </p>
 
     <div class="mt-12">
