@@ -33,6 +33,9 @@ export interface Project {
 
 export interface WorkExperience {
   org: string
+  url?: string
+  programLabel?: string
+  programUrl?: string
   role: string
   location: string
   start: string

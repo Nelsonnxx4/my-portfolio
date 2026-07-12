@@ -20,7 +20,26 @@ useGsapReveal(sectionEl)
         <div class="flex flex-wrap items-baseline justify-between gap-2">
           <div>
             <p class="font-medium text-ink">{{ job.role }}</p>
-            <p class="text-sm text-neutral-600">{{ job.org }} · {{ job.location }}</p>
+            <p class="text-sm text-neutral-600">
+              <a
+                v-if="job.url"
+                :href="job.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-ink hover:underline"
+              >{{ job.org }}</a>
+              <span v-else>{{ job.org }}</span>
+              · {{ job.location }}
+              <template v-if="job.programLabel && job.programUrl">
+                ·
+                <a
+                  :href="job.programUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-ink hover:underline"
+                >{{ job.programLabel }}</a>
+              </template>
+            </p>
           </div>
           <span class="text-sm text-neutral-500">{{ job.start }} – {{ job.end ?? 'Present' }}</span>
         </div>

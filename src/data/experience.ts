@@ -3,6 +3,9 @@ import type { Education, WorkExperience } from '@/types/portfolio'
 export const workExperience: WorkExperience[] = [
   {
     org: 'NITDA Nigeria',
+    url: 'https://nitda.gov.ng/',
+    programLabel: 'NCAIR',
+    programUrl: 'https://ncair.nitda.gov.ng/',
     role: 'Software Engineering Intern',
     location: 'Abuja, Nigeria',
     start: 'Jun 2026',

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { skillGroups } from '@/data/skills'
-import SkillBadge from '@/components/ui/SkillBadge.vue'
-import { useGsapReveal } from '@/composables/useGsapReveal'
+import { ref } from "vue";
+import { skillGroups } from "@/data/skills";
+import SkillBadge from "@/components/ui/SkillBadge.vue";
+import { useGsapReveal } from "@/composables/useGsapReveal";
 
-const sectionEl = ref<HTMLElement | null>(null)
-useGsapReveal(sectionEl, { stagger: 0.06 })
+const sectionEl = ref<HTMLElement | null>(null);
+useGsapReveal(sectionEl, { stagger: 0.06 });
 </script>
 
 <template>
