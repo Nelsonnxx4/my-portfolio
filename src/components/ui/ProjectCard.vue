@@ -29,9 +29,7 @@ defineProps<{ project: Project }>()
         </a>
       </div>
       <p class="mt-1 text-sm text-neutral-600">{{ project.description }}</p>
-      <ul class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-neutral-600">
-        <li v-for="bullet in project.bullets" :key="bullet">{{ bullet }}</li>
-      </ul>
+      <ul class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-neutral-600"></ul>
       <div class="mt-4 flex flex-wrap gap-1.5">
         <SkillBadge v-for="tech in project.stack" :key="tech" :label="tech" />
       </div>

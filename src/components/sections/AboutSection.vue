@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import polaroid1 from '@/assets/images/polaroid-placeholder-1.svg'
-import polaroid2 from '@/assets/images/polaroid-placeholder-2.svg'
 import rnbPlaylistImg from '@/assets/images/rnb_playlist.png'
 import indiePlaylistImg from '@/assets/images/indie_playlist.png'
-import PolaroidPhoto from '@/components/ui/PolaroidPhoto.vue'
 import IconMusic from '@/components/icons/IconMusic.vue'
 import IconBadminton from '@/components/icons/IconBadminton.vue'
 import IconHeadphones from '@/components/icons/IconHeadphones.vue'
@@ -40,25 +37,20 @@ const hobbies = [
   {
     icon: IconHeadphones,
     title: 'DJing & making beats',
-    description: "Currently learning to DJ and make my own beats.",
+    description: 'Currently learning to DJ and make my own beats.',
   },
 ]
 </script>
 
 <template>
-  <section id="about" ref="sectionEl" class="mx-auto max-w-3xl px-4 py-16">
+  <section id="about" ref="sectionEl" class="mx-auto max-w-3xl px-4 pt-32 pb-16">
     <h2 class="text-2xl font-semibold tracking-tight">About</h2>
-    <p class="mt-4 max-w-2xl text-neutral-600">
-      I'm Nelson, a UI Frontend Engineer who enjoys building responsive, user-friendly interfaces
-      and scalable web applications. I'm currently a software engineering intern at NITDA Nigeria
-      and studying Computer Science, deepening my backend skills so I can ship full-stack products
-      end to end.
+    <p class="mt-4 max-w-3xl text-gray-600">
+      First time I wrote code was in 2020 out of curiousity which was python, then I did'nt code
+      till 3 years later which I started with web development, and I have been loving it ever since.
+      I build responsive, user-friendly interfaces and scalable web applications, and I'm deepening
+      my backend skills to ship full-stack products end to end.
     </p>
-
-    <div class="mt-10 flex justify-center gap-6">
-      <PolaroidPhoto :src="polaroid1" alt="Placeholder photo" caption="swap me for a real one" rotate="left" />
-      <PolaroidPhoto :src="polaroid2" alt="Placeholder photo" caption="coming soon :)" rotate="right" />
-    </div>
 
     <div class="mt-12">
       <h3 class="text-sm font-semibold uppercase tracking-wide text-neutral-400">

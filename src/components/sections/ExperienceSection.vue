@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { workExperience, education } from '@/data/experience'
-import TimelineItem from '@/components/ui/TimelineItem.vue'
+import { workExperience } from '@/data/experience'
 import { useGsapReveal } from '@/composables/useGsapReveal'
 
 const sectionEl = ref<HTMLElement | null>(null)
@@ -29,18 +28,6 @@ useGsapReveal(sectionEl)
           <li v-for="bullet in job.bullets" :key="bullet">{{ bullet }}</li>
         </ul>
       </article>
-    </div>
-
-    <h2 class="mt-12 text-2xl font-semibold tracking-tight">Education</h2>
-    <div class="mt-4">
-      <TimelineItem
-        v-for="school in education"
-        :key="school.school"
-        :start="school.start"
-        :end="school.end"
-        :title="school.degree"
-        :subtitle="`${school.school} · ${school.location}`"
-      />
     </div>
   </section>
 </template>
