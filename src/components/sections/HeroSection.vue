@@ -15,7 +15,7 @@ useHeroIntro([avatarEl, headingEl, bioEl])
 <template>
   <section
     id="top"
-    class="mx-auto flex max-w-2xl flex-col items-center px-4 pb-16 pt-20 text-center"
+    class="mx-auto flex max-w-2xl flex-col items-center px-4 pb-16 pt-40 text-center"
   >
     <div ref="avatarEl">
       <AvatarImage :src="heroImg" :alt="site.name" size="96px" />
@@ -35,11 +35,7 @@ useHeroIntro([avatarEl, headingEl, bioEl])
           stroke-linejoin="round"
           aria-hidden="true"
         >
-          <path
-            class="arrow-shadow"
-            pathLength="1"
-            d="M6 5C17 1 12 15 23 15C34 15 37 23 42 29"
-          />
+          <path class="arrow-shadow" pathLength="1" d="M6 5C17 1 12 15 23 15C34 15 37 23 42 29" />
           <path class="arrow-shaft" pathLength="1" d="M6 5C17 1 12 15 23 15C34 15 37 23 42 29" />
           <path class="arrow-head" stroke="none" d="M44 24 38 31 49 33Z" />
           <path

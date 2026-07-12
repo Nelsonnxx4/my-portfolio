@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import IconHome from '@/components/icons/IconHome.vue'
-import SocialLinks from '@/components/ui/SocialLinks.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
+
+const navLinks = [
+  { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Skills', href: '#skills' },
+]
 </script>
 
 <template>
@@ -17,7 +23,16 @@ import BaseButton from '@/components/ui/BaseButton.vue'
         <IconHome class="h-[1.1rem] w-[1.1rem]" />
       </a>
       <div class="h-5 w-px bg-neutral-200" />
-      <SocialLinks />
+      <nav class="flex items-center gap-1">
+        <a
+          v-for="link in navLinks"
+          :key="link.href"
+          :href="link.href"
+          class="rounded-full px-3 py-1.5 text-sm font-medium text-neutral-600 transition-colors hover:bg-neutral-100 hover:text-ink"
+        >
+          {{ link.label }}
+        </a>
+      </nav>
       <div class="h-5 w-px bg-neutral-200" />
       <BaseButton href="#contact" class="ml-1">Get in Touch</BaseButton>
     </div>

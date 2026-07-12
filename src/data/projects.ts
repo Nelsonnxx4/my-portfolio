@@ -1,6 +1,7 @@
 import type { Project } from '@/types/portfolio'
 import mealmatchScreenshot from '@/assets/images/mealmatch_screenshot.png'
 import zendeScreenshot from '@/assets/images/zende_screenshot.png'
+import notlifyScreenshot from '@/assets/images/notlify_screenshot.png'
 
 export const projects: Project[] = [
   {
@@ -30,6 +31,7 @@ export const projects: Project[] = [
     ],
     stack: ['Vue.js', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Stripe'],
     url: 'https://zende-delta.vercel.app/',
+    repoUrl: 'https://github.com/Nelsonnxx4/my-voyage',
     image: zendeScreenshot,
     kind: 'web',
     featured: true,
@@ -47,6 +49,7 @@ export const projects: Project[] = [
     stack: ['React', 'TypeScript', 'Vite', 'Express', 'Prisma', 'PostgreSQL', 'Redis', 'TanStack Query'],
     url: 'https://not-lify.vercel.app/',
     repoUrl: 'https://github.com/Nelsonnxx4/my-notes',
+    image: notlifyScreenshot,
     kind: 'web',
     featured: true,
   },

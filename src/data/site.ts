@@ -7,7 +7,7 @@ export const site: SiteInfo = {
   tagline: "Hey, I'm Nelson",
   subTagline: " and you're welcome.",
   summary:
-    'I\'m a <span class="marker-underline">Fullstack</span> Developer with much inclination towards <span class="marker-underline">Frontend Engineering</span>. Welcome to my page where I showcase my work and let you know more about me.',
+    'I\'m a <span class="marker-underline">Fullstack Developer</span> with much inclination towards <span class="marker-underline">Frontend Engineering</span>. Welcome to my page where I showcase my work and let you know more about me.',
   email: 'oonelsoncodes@gmail.com',
   location: 'Abuja, Nigeria',
   socialLinks: [

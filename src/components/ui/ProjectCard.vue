@@ -2,6 +2,7 @@
 import type { Project } from '@/types/portfolio'
 import SkillBadge from '@/components/ui/SkillBadge.vue'
 import IconArrowUpRight from '@/components/icons/IconArrowUpRight.vue'
+import IconGithub from '@/components/icons/IconGithub.vue'
 
 defineProps<{ project: Project }>()
 </script>
@@ -17,16 +18,28 @@ defineProps<{ project: Project }>()
     <div class="flex flex-1 flex-col p-5">
       <div class="flex items-start justify-between gap-2">
         <h3 class="font-semibold text-ink">{{ project.name }}</h3>
-        <a
-          v-if="project.url"
-          :href="project.url"
-          target="_blank"
-          rel="noopener noreferrer"
-          :aria-label="`Open ${project.name}`"
-          class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-ink transition-colors hover:bg-neutral-100"
-        >
-          <IconArrowUpRight class="h-4 w-4" />
-        </a>
+        <div class="flex shrink-0 items-center gap-1">
+          <a
+            v-if="project.repoUrl && project.id !== 'mealmatch'"
+            :href="project.repoUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            :aria-label="`Open ${project.name} repository`"
+            class="flex h-8 w-8 items-center justify-center rounded-full text-ink transition-colors hover:bg-neutral-100"
+          >
+            <IconGithub class="h-4 w-4" />
+          </a>
+          <a
+            v-if="project.url"
+            :href="project.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            :aria-label="`Open ${project.name}`"
+            class="flex h-8 w-8 items-center justify-center rounded-full text-ink transition-colors hover:bg-neutral-100"
+          >
+            <IconArrowUpRight class="h-4 w-4" />
+          </a>
+        </div>
       </div>
       <p class="mt-1 text-sm text-neutral-600">{{ project.description }}</p>
       <ul class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-neutral-600"></ul>

@@ -46,8 +46,9 @@ const hobbies = [
   <section id="about" ref="sectionEl" class="mx-auto max-w-3xl px-4 pt-32 pb-16">
     <h2 class="text-2xl font-semibold tracking-tight">About</h2>
     <p class="mt-4 max-w-3xl text-gray-600">
-      First time I wrote code was in 2020 out of curiousity which was python, then I did'nt code
-      till 3 years later which I started with web development, and I have been loving it ever since.
+      First time I wrote code was in 2020 out of curiousity which was
+      <span class="highlight-yellow">python</span>, then I did'nt code
+      till 3 years later which I started with <span class="highlight-lemon">web development</span>, and I have been loving it ever since.
       I build responsive, user-friendly interfaces and scalable web applications, and I'm deepening
       my backend skills to ship full-stack products end to end.
     </p>
