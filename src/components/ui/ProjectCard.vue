@@ -15,7 +15,7 @@ defineProps<{ project: Project }>()
       v-if="project.image"
       :src="project.image"
       :alt="`${project.name} screenshot`"
-      class="aspect-video w-full object-cover object-top"
+      class="aspect-video w-full object-contain object-top"
     />
     <div class="flex flex-1 flex-col p-5">
       <div class="flex items-start justify-between gap-2">
@@ -44,7 +44,9 @@ defineProps<{ project: Project }>()
         </div>
       </div>
       <p class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">{{ project.description }}</p>
-      <ul class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-neutral-600 dark:text-neutral-400"></ul>
+      <ul
+        class="mt-3 list-disc space-y-1.5 pl-5 text-sm text-neutral-600 dark:text-neutral-400"
+      ></ul>
       <div class="mt-4 flex flex-wrap gap-1.5">
         <SkillBadge v-for="tech in project.stack" :key="tech" :label="tech" />
       </div>

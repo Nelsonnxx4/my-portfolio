@@ -11,7 +11,17 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: 'Tools & Testing',
-    items: ['Git', 'Vite', 'Webpack', 'Redux Toolkit', 'ESLint', 'Jest', 'Vitest', 'Supertest', 'React Testing Library'],
+    items: [
+      'Git',
+      'Vite',
+      'Webpack',
+      'Redux Toolkit',
+      'ESLint',
+      'Jest',
+      'Vitest',
+      'Supertest',
+      'React Testing Library',
+    ],
   },
   {
     label: 'Backend & Database',
