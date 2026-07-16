@@ -46,10 +46,14 @@ const hobbies = [
   <section id="about" ref="sectionEl" class="mx-auto max-w-3xl px-4 pt-32 pb-16">
     <h2 class="text-2xl font-semibold tracking-tight">About</h2>
     <p class="mt-4 max-w-3xl text-gray-600 dark:text-neutral-400">
-      First time I wrote code was in 2020 out of curiousity which was
-      <span class="highlight-yellow">python</span>, then I did'nt code till 3 years later which I
-      started with <span class="highlight-lemon">web development</span>, and I have been loving it
-      ever since. Currently Interning at
+      First time I wrote code was in 2020 out of curiosity, using
+      <span class="highlight-yellow">python</span>. After that, I didn't code again until three
+      years later, when I started learning <span class="highlight-lemon">web development</span>, and
+      I've been loving it ever since.
+    </p>
+
+    <p class="mt-4 max-w-3xl text-gray-600 dark:text-gray-400">
+      Currently Interning at
       <a
         href="https://nitda.gov.ng/"
         target="_blank"
@@ -57,18 +61,20 @@ const hobbies = [
         class="font-medium text-ink hover:underline"
         >NITDA</a
       >
-      nigeria, under the AI and Robotics department
+      nigeria, under the AI and Robotics department at the
       <a
         href="https://ncair.nitda.gov.ng/"
         target="_blank"
         rel="noopener noreferrer"
         class="font-medium text-ink hover:underline"
-        >NCAIR</a
+        >National Centre for Artificial Intelligence and Robotics (NCAIR).</a
       >.
     </p>
 
     <div class="mt-12">
-      <h3 class="text-sm font-semibold uppercase tracking-wide text-neutral-400 dark:text-neutral-500">
+      <h3
+        class="text-sm font-semibold uppercase tracking-wide text-neutral-400 dark:text-neutral-500"
+      >
         Outside of code
       </h3>
       <ul class="mt-4 space-y-5">
@@ -80,7 +86,9 @@ const hobbies = [
           </span>
           <div>
             <p class="font-medium text-ink">{{ hobby.title }}</p>
-            <p class="text-sm text-neutral-600 dark:text-neutral-400">{{ hobby.description }}</p>
+            <p class="text-sm text-neutral-600 dark:text-neutral-400">
+              {{ hobby.description }}
+            </p>
             <div v-if="hobby.links?.length" class="mt-1 flex flex-wrap gap-4">
               <a
                 v-for="link in hobby.links"
