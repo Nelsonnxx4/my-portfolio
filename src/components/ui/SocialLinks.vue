@@ -3,6 +3,7 @@ import { site } from '@/data/site'
 import IconGithub from '@/components/icons/IconGithub.vue'
 import IconLinkedin from '@/components/icons/IconLinkedin.vue'
 import IconMail from '@/components/icons/IconMail.vue'
+import IconX from '@/components/icons/IconX.vue'
 import type { IconName } from '@/types/portfolio'
 
 withDefaults(defineProps<{ iconSize?: string }>(), { iconSize: '1.1rem' })
@@ -11,6 +12,7 @@ const icons: Partial<Record<IconName, typeof IconGithub>> = {
   github: IconGithub,
   linkedin: IconLinkedin,
   mail: IconMail,
+  x: IconX,
 }
 </script>
 
