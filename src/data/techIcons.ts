@@ -26,6 +26,7 @@ import {
   siTestinglibrary,
   siFirebase,
   siMongodb,
+  siDocker,
 } from 'simple-icons'
 
 export interface TechIcon {
@@ -36,6 +37,8 @@ export interface TechIcon {
 /** Maps a tech-stack label (as used in data/projects.ts and data/skills.ts) to its simple-icons SVG path and brand color. Labels without a recognizable brand icon (e.g. Supertest, Paystack) are omitted and render as text-only badges. */
 export const techIcons: Record<string, TechIcon> = {
   React: { path: siReact.path, hex: `#${siReact.hex}` },
+  'React/React Native': { path: siReact.path, hex: `#${siReact.hex}` },
+  'React Native': { path: siReact.path, hex: `#${siReact.hex}` },
   TypeScript: { path: siTypescript.path, hex: `#${siTypescript.hex}` },
   'Tailwind CSS': { path: siTailwindcss.path, hex: `#${siTailwindcss.hex}` },
   Supabase: { path: siSupabase.path, hex: `#${siSupabase.hex}` },
@@ -56,6 +59,7 @@ export const techIcons: Record<string, TechIcon> = {
   Python: { path: siPython.path, hex: `#${siPython.hex}` },
   'Next.js': { path: siNextdotjs.path, hex: `#${siNextdotjs.hex}` },
   Git: { path: siGit.path, hex: `#${siGit.hex}` },
+  Docker: { path: siDocker.path, hex: `#${siDocker.hex}` },
   Webpack: { path: siWebpack.path, hex: `#${siWebpack.hex}` },
   'Redux Toolkit': { path: siRedux.path, hex: `#${siRedux.hex}` },
   ESLint: { path: siEslint.path, hex: `#${siEslint.hex}` },

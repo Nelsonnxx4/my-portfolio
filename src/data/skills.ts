@@ -7,13 +7,14 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: 'Frameworks & Libraries',
-    items: ['Vue.js', 'React', 'Next.js', 'Tailwind CSS', 'TanStack Query'],
+    items: ['Vue.js', 'React/React Native', 'Next.js', 'Tailwind CSS', 'TanStack Query'],
   },
   {
     label: 'Tools & Testing',
     items: [
       'Git',
       'Vite',
+      'Docker',
       'Webpack',
       'Redux Toolkit',
       'ESLint',
